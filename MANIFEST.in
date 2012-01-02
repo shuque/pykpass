@@ -1,0 +1,6 @@
+include CHANGELOG
+include MANIFEST.in
+include kpass.h
+include TODO
+include test/test1.py
+include test/test2.py

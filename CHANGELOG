@@ -1,0 +1,27 @@
+2011-06-13
+pykpass version 0.5
+Changed method of disabling the MIT Kerberos replay cache. The old
+method set a flag in krb5_auth_con_setflags(), which does not appear
+to work correctly in newer versions of MIT krb5. The new method
+sets the environment variable KRB5RCACHETYPE to "none" - this needs
+MIT Kerberos 1.4.x or newer to work. For earlier versions the replay
+cache won't be disabled.
+
+2007-04-30
+pykpass version 0.4
+Fixed a memory leak.
+
+2007-04-09
+pykpass version 0.3
+Performance optimization: obtain service ticket directly from AS instead 
+of via TGT. Also some minor clean. And no more testing for MIT Kerberos
+versions < 1.3.
+
+2005-08-17
+pykpass version 0.2
+Contains some minor fixes to work better with the Heimdal Kerberos
+distribution.
+
+2005-06-03
+pykpass version 0.1
+Python extension for Kerberos 5 password verification.

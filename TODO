@@ -1,0 +1,11 @@
+Possible TODO list
+
+* Use setup.cfg? There doesn't appear to be a way to specify multiple
+  libraries in the current distutils interface for setup.cfg (parameter
+  name: "libraries"). Doh!
+
+* Add trove classifiers to setup.py
+
+* Should I extend the kpass() interface to allow specification of 
+  a Kerberos realm? (initial inclination: no)
+
